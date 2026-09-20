@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\jacqu\\OneDrive\\Documents\\BYUI\\Fall 2026\\cse325\\unit01\\ContosoPizza\\ContosoPizza.csproj": {}
+    "C:\\Users\\jacqu\\OneDrive\\Documents\\BYUI\\Fall 2026\\cse325\\unit01\\ContosoPizza\\ContosoPizza.csproj": {}
   },
   "projects": {
-    "c:\\Users\\jacqu\\OneDrive\\Documents\\BYUI\\Fall 2026\\cse325\\unit01\\ContosoPizza\\ContosoPizza.csproj": {
+    "C:\\Users\\jacqu\\OneDrive\\Documents\\BYUI\\Fall 2026\\cse325\\unit01\\ContosoPizza\\ContosoPizza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\jacqu\\OneDrive\\Documents\\BYUI\\Fall 2026\\cse325\\unit01\\ContosoPizza\\ContosoPizza.csproj",
+        "projectUniqueName": "C:\\Users\\jacqu\\OneDrive\\Documents\\BYUI\\Fall 2026\\cse325\\unit01\\ContosoPizza\\ContosoPizza.csproj",
         "projectName": "ContosoPizza",
-        "projectPath": "c:\\Users\\jacqu\\OneDrive\\Documents\\BYUI\\Fall 2026\\cse325\\unit01\\ContosoPizza\\ContosoPizza.csproj",
+        "projectPath": "C:\\Users\\jacqu\\OneDrive\\Documents\\BYUI\\Fall 2026\\cse325\\unit01\\ContosoPizza\\ContosoPizza.csproj",
         "packagesPath": "C:\\Users\\jacqu\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\jacqu\\OneDrive\\Documents\\BYUI\\Fall 2026\\cse325\\unit01\\ContosoPizza\\obj\\",
+        "outputPath": "C:\\Users\\jacqu\\OneDrive\\Documents\\BYUI\\Fall 2026\\cse325\\unit01\\ContosoPizza\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jacqu\\AppData\\Roaming\\NuGet\\NuGet.Config"
