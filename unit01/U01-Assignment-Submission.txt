@@ -1,0 +1,67 @@
+01 Assignment: Build .NET Applications with C#
+Jacquelyn Kulmus
+CSE 325
+
+==================================================
+PART 1: WEB API OUTPUT
+==================================================
+
+The following output shows the existing pizza records and my additional
+record, "Kulmus Family Feast":
+
+id name                 isGlutenFree
+-- ----                 ------------
+ 1 Classic Italian             False
+ 2 Veggie                       True
+ 3 Kulmus Family Feast         False
+
+
+==================================================
+PART 2: SALES SUMMARY FUNCTION
+==================================================
+
+void GenerateSalesSummary(
+    IEnumerable<string> salesFiles,
+    string storesDirectory,
+    string salesTotalDir)
+{
+    double totalSales = 0;
+    StringBuilder report = new StringBuilder();
+
+    report.AppendLine("Sales Summary");
+    report.AppendLine("----------------------------");
+    report.AppendLine();
+    report.AppendLine("Details:");
+
+    foreach (var file in salesFiles)
+    {
+        // Only include the actual sales.json files in the report.
+        if (!Path.GetFileName(file).Equals(
+                "sales.json",
+                StringComparison.OrdinalIgnoreCase))
+        {
+            continue;
+        }
+
+        string salesJson = File.ReadAllText(file);
+
+        SalesData? data =
+            JsonConvert.DeserializeObject<SalesData?>(salesJson);
+
+        double storeSales = data?.Total ?? 0;
+        totalSales += storeSales;
+
+        string fileName = Path.GetRelativePath(storesDirectory, file);
+        report.AppendLine($"  {fileName}: {storeSales:C}");
+    }
+
+    report.Insert(
+        report.ToString().IndexOf("Details:"),
+        $"Total Sales: {totalSales:C}{Environment.NewLine}{Environment.NewLine}"
+    );
+
+    string reportPath =
+        Path.Combine(salesTotalDir, "sales-summary.txt");
+
+    File.WriteAllText(reportPath, report.ToString());
+}
