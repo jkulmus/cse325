@@ -62,7 +62,7 @@ Assignment customizations:
 
 \- \[Source code](unit03/BlazingPizza/)
 
-\- Video demonstration: link to be added.
+\- Video demonstration: (https://youtu.be/_salpBbXNho)
 
 
 
